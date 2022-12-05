@@ -56,13 +56,13 @@ equals.addEventListener('click', () =>{
         resultValue =firstValue + secondValue;
     }
     else if(sign === "-"){
-        resultValue =firstValue + secondValue;
+        resultValue =firstValue - secondValue;
     }
     else if(sign === "x"){
-        resultValue =firstValue + secondValue;
+        resultValue =firstValue * secondValue;
     }
     else if(sign === "/"){
-        resultValue =firstValue + secondValue;
+        resultValue =firstValue / secondValue;
     }
     result.innerHTML = resultValue;
     firstValue = resultValue;
@@ -83,7 +83,7 @@ function checkResultLenght(){
 negative.addEventListener('click', () => {
     result.innerHTML = "";
     if(firstValue != ""){
-        resultValue = firstValue;
+        resultValue = -firstValue;
         firstValue = resultValue;
     }
     if(firstValue != "" && secondValue != "" && sign != ""){
